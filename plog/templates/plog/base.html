@@ -1,0 +1,86 @@
+
+
+{% load static %}
+
+<html>
+    <head>
+        <title>John Bergschneider</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet" type="text/css"> 
+        <link rel="stylesheet" href="{% static 'css/Plog.css' %}">
+        
+    </head>
+
+
+
+<div class="navbar">
+
+  <a href="{% url 'post_list'  %}"> Home </a>
+  <a href="{% url 'research'  %}">  Research </a>
+  <a href="{% url 'teaching'  %}"> Teaching </a>
+  <a href="{% url 'seminars'  %}"> Seminars</a> 
+  <a href="{% url 'dprinting'  %}"> 3-D Printing</a>
+
+
+
+
+
+
+  </div>
+  
+    
+</div>
+
+
+
+
+
+
+
+<div class="row">
+  <div class="side">
+
+
+ <p style="text-align:center;"><img src="{% static "css\hoho.jpg" %}" width="200" height="auto" ></p><br>
+ <h3><p style="text-align:center;">John Bergschneider</h3></p>
+   <p style="text-align:center;">Florida State University<br> Department of Mathematics</p>
+   <p style="text-align:center;">
+
+    <b>Office Hours</b><br>
+    MCH 402B<br>
+    M 9:00-10:00<br>
+    W 9:00-10:00 and 2:30-3:30<br>
+    Other times by appt.</p><br>
+<p style="text-align:center;"><b>Fall 2019 Teaching</b><br>
+    Calculus 3 (MAC2313)<br><br>
+    <b>Contact</b><br>jbergsch at math dot fsu dot edu</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="main">
+
+
+
+
+
+   {% block content %}
+   {% endblock %}
+
+
+</div></div>
+
+
+<!-- Footer -->
+<div class="footer">
+</div>
+</html>
